@@ -5,15 +5,15 @@ html {
 }
 
 body {
-    padding: 0cm 2.5cm 0.5cm 2.5cm;
+    padding: min(5em, 8%);
 }
 
 header {
     border-bottom: 2px solid #999;
     text-align: center;
-    padding: 20px 30px;
-    max-width: 60%;
+    padding: 0px 0px 20px;
     margin: auto;
+    width: (960px, 70%);
 }
 
 header p {
@@ -32,9 +32,9 @@ article h2 {
 
 footer {
     text-align: center;
-	max-width: 70%;
 	margin: auto;
 	clear: both;
+    width: min(1000px, 90%);
 }
 
 h1 {
@@ -47,24 +47,16 @@ p {
     font-size: 20px;
 }
 
-a:link {
-  color: #147960;
-}
+a {text-decoration: none}
 
-a:visited {
-  color: #115051;
-}
+a:link {color: #147960;}
 
-a:hover {
-  color: #009285;
-}
+a:visited:not(.nav) {color: #115051;}
 
-a:active {
-  color: #009285;
-}
+a:visited.nav {color: #147960;}
 
-@media only screen and (max-width: 600px) {
-    body {
-        padding: 0cm 0.5cm 0.5cm 0.5cm
-    }
-}
+a:hover {color: #009285;}
+
+a:visited:hover {color: #009285;}
+
+a:active {color: #009285;}
