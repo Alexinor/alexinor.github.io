@@ -6,6 +6,7 @@ html {
 
 body {
     padding: min(5em, 8%);
+    padding-top: 0;
 }
 
 header {
@@ -16,18 +17,11 @@ header {
     width: (960px, 70%);
 }
 
-header p {
-    font-size: 16px;
-}
-
 article {
     border-bottom: 2px solid #999;
     padding-bottom: 20px;
     margin-bottom: 20px;
-}
-article h2 {
-    font-weight: normal;
-    margin-bottom: 12px;
+    line-height: 1.5;
 }
 
 footer {
@@ -38,13 +32,7 @@ footer {
 }
 
 h1 {
-    color:#b9b9b9;
     text-align: center;
-}
-
-p {
-    color:#b9b9b9;
-    font-size: 20px;
 }
 
 a {text-decoration: none}
@@ -55,8 +43,32 @@ a:visited:not(.nav) {color: #115051;}
 
 a:visited.nav {color: #147960;}
 
-a:hover {color: #009285;}
+a:hover {color: #009285; text-decoration-line: underline;}
 
-a:visited:hover {color: #009285;}
+a:visited:hover {color: #009285; text-decoration-line: underline;}
 
-a:active {color: #009285;}
+a:active {color: #009285; text-decoration-line: underline;}
+
+.res {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+.res > div {
+    width: 14em;  
+}
+
+.lit {
+    display: flex;
+    flex-direction: column;
+}
+
+.lit > div img {
+    width: min(250px, 33vw);
+    aspect-ratio: 1 / 1.41421356;
+    float: left;
+    object-fit: cover;
+    margin-right: 5vw;
+}
