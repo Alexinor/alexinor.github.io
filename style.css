@@ -2,6 +2,7 @@ html {
     background-color:#121212;
     color:#b9b9b9;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
 }
 
 body {
@@ -17,8 +18,27 @@ header {
     width: (960px, 70%);
 }
 
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+ #moon {
+        padding-right: 4px;
+    }
+
+@media (max-width: 420px) {
+    #moon {display: none}
+    nav {
+    align-items: space-evenly;
+    justify-content: space-evenly;
+    }
+}
+
 article {
-    border-bottom: 2px solid #999;
+    border-bottom: 2px solid #c4baba;
     padding-bottom: 20px;
     margin-bottom: 20px;
     line-height: 1.5;
@@ -39,9 +59,9 @@ a {text-decoration: none}
 
 a:link {color: #147960;}
 
-a:visited:not(.nav) {color: #115051;}
+a:visited {color: #115051;}
 
-a:visited.nav {color: #147960;}
+nav > div > a:visited {color: #147960;}
 
 a:hover {color: #009285; text-decoration-line: underline;}
 
@@ -66,9 +86,10 @@ a:active {color: #009285; text-decoration-line: underline;}
 }
 
 .lit > div img {
-    width: min(250px, 33vw);
+    width: min(400px, 33vw);
     aspect-ratio: 1 / 1.41421356;
     float: left;
     object-fit: cover;
     margin-right: 5vw;
+    margin-bottom: 1rem;
 }
