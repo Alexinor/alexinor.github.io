@@ -82,14 +82,21 @@ a:active {color: #009285; text-decoration-line: underline;}
 
 .lit {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+.lit > div {
+    width: 40em;
+    margin-right: 1rem;
 }
 
 .lit > div img {
-    width: min(400px, 33vw);
+    width: min(300px, 33vw);
     aspect-ratio: 1 / 1.41421356;
     float: left;
     object-fit: cover;
-    margin-right: 5vw;
+    margin-right: 2rem;
     margin-bottom: 1rem;
 }
