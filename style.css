@@ -63,6 +63,8 @@ a:visited {color: #115051;}
 
 nav > div > a:visited {color: #147960;}
 
+footer > div > a:visited {color: #147960;}
+
 a:hover {color: #009285; text-decoration-line: underline;}
 
 a:visited:hover {color: #009285; text-decoration-line: underline;}
