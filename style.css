@@ -25,7 +25,7 @@ nav {
     justify-content: center;
 }
 
- #moon {
+#moon {
         padding-right: 4px;
     }
 
@@ -51,8 +51,11 @@ footer {
     width: min(1000px, 90%);
 }
 
-h1 {
-    text-align: center;
+
+div ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {text-decoration: none}
@@ -92,6 +95,14 @@ a:active {color: #009285; text-decoration-line: underline;}
 .lit > div {
     width: 40em;
     margin-right: 1rem;
+    hyphens: auto;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.lit > div h3{
+    text-align: left;
+    text-align-last: left;
 }
 
 .lit > div img {
